@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birdflix</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="shortcut icon" href="./imgs/icon.png" type="image/x-icon">
+
+    <!-- owl files -->
+    <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar padding">
+            <nav class="link-mobile">
+                <a href="#" class="logo">
+                    <img src="./imgs/logo.png" alt="Birdflix logo">
+                </a>
+                <ul class="dropdown-menu">
+                    <button role="button">Navegar
+                        <ul class="dropdown-content">
+                            <li ><a href="#"> Início</a></li>
+                            <li ><a href="#"> Séries</a></li>
+                            <li ><a href="#"> Filmes</a></li>
+                            <li ><a href="#"> Documentários</a></li>
+                        </ul>
+                    </button>
+                </ul>
+            </nav>
+            <nav class="link desktop">
+                <a href="#" class="logo">
+                    <img src="./imgs/logo.png" alt="Birdflix logo">
+                </a>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Busque..." id="search" autocomplete="off">
+                <!-- implementar pesquisa em tempo real assim como a netflix -->
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="highlight padding">
+            <div class="text-wrapper">
+                <h3 class="title">Rio</h3>
+                <p class="description">Blu é uma arara azul que foi viver uma aventura no Rio de Janeiro e lá, tenta conquistar a única arara de sua espécie ainda existente, que por sorte é uma menina.</p>
+            </div>
+            <div class="button-wrapper">
+                <button role="button" class="button"><i class="fas fa-play fa-lg"></i>
+                    <!-- role deixa claro que é um botão, independente de onde esteja sendo renderizado o conteúdo -->
+                    ASSISTIR
+                </button>
+                <button role="button" class="button button-gray"><i class="fas fa-info-circle fa-lg"></i>
+                    MAIS INFORMAÇÕES
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- todo: recriar carousel com css
+    https://css-tricks.com/how-to-re-create-a-nifty-netflix-animation-in-css/
+    https://www.youtube.com/watch?v=maNqKIfk3ds -->
+
+    <div class="carousel-movies">
+        <div class="owl-carousel owl-theme">
+            <div class="item movie-box"><img src="./imgs/mini-covers/angry-birds.jpg" alt="Angry Birds"></div>
+            <div class="item movie-box"><img src="./imgs/mini-covers/angry-birds2.jpg" alt="Angry Birds 2"></div>
+            <div class="item movie-box"><img src="./imgs/mini-covers/bons-de-bico.jpg" alt="Bons de Bico"></div>
+            <div class="item movie-box"><img src="./imgs/mini-covers/follow-that-bird.jpg" alt="Follow that bird"></div>
+            <div class="item movie-box"><img src="./imgs/mini-covers/happy-feat.jpg" alt="Happy Feat"></div>
+            <div class="item movie-box"><img src="./imgs/mini-covers/happy-feat2.jpg" alt="Happy Feat 2"></div>
+            <div class="item movie-box"><img src="./imgs/mini-covers/rio2.jpg" alt="Rio 2"></div>
+            <div class="item movie-box"><img src="./imgs/mini-covers/valiant.jpg" alt="Valiant"></div>
+            <div class="item movie-box"><img src="./imgs/mini-covers/voando-alto.jpg" alt="Voando Alto"></div>
+            <div class="item movie-box"><img src="./imgs/mini-covers/zambezia.jpg" alt="Zambezia"></div>
+        </div>
+    </div>
+
+    <!-- javascript no final
+    se a pagina tentar executar algum comando javascript antes da pagina ter sido carregada pode occorer algum erro -->
+    <script src="./js/owl/jquery.min.js"></script>
+    <script src="./js/owl/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

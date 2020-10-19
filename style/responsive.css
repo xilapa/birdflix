@@ -1,0 +1,192 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+@media (max-width: 900px){
+    .search-box input[type=text]:focus {
+        width: 170px;    
+    }
+}
+
+@media screen and (max-width:800px){
+    * {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    }
+    
+
+    .padding {
+        padding: 0;
+    }
+
+    .logo img {
+        height: 36px;
+        width: auto;   
+        margin-right: 15px;  
+    }
+
+    .nav-bar {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        min-height: 90px;
+        width: auto;
+        margin: 0 5px;
+        margin-top: 10px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .link-mobile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /* dropdown-menu */
+    .dropdown-menu{
+        list-style: none;
+        transition: 0.5s ease-in-out;
+        margin: 2px;
+        position:relative;
+    }
+
+    .dropdown-menu button {
+        cursor: pointer;
+        min-width: 150px;   
+        min-height: 20px;
+        background-color: #141414;
+        border: solid #AAA 1px;
+        border-radius: 6px;
+        padding: 2px;
+        vertical-align: middle;
+        margin-bottom: 2px;
+    }
+
+
+    .dropdown-content {
+        display: none;
+        align-items: center;
+        position: absolute;
+        background-color: #141414;
+        cursor: pointer;  
+        list-style: none;
+        min-width: 144px;   
+        min-height: 20px;
+        margin: 0;
+        padding: 0;
+        border-left: solid #AAA 1px;
+        border-right: solid #AAA 1px;
+        border-top: solid #AAA 1px;
+    }
+
+    .dropdown-content li {
+        border-bottom: solid #AAA 1px;
+        justify-content: center;
+        padding: 2px;
+    }
+
+    .dropdown-menu:hover .dropdown-content {
+        display: block;
+        margin-top: 2px;
+    }
+    
+    .dropdown-content a:hover {
+        color: white;
+    }
+    /* search-box */
+    .search-box {
+        margin-top: 10px;
+        border: solid #AAA 1px;
+        padding:  4px 6px;
+        color: black;
+        min-width: auto;
+    }
+    
+    .search-box input[type=text] {
+        border: none;
+        background-color: var(--preto);
+        padding-left: 2px;
+        display: inline;
+        color: #FFF;
+        font-weight: 550;
+        width: 120px;
+        transition: 0.6s ease-in-out;
+        /* z-index: 0; */
+    }
+    
+    .search-box input[type=text]:focus {
+        outline: none;
+        /* remove a linha branca quando o elemento esta em foco */
+        width: 80vw;    
+    }
+
+    .highlight {
+        min-width: 100vw;
+        min-height: auto;
+    }
+
+    .padding {
+      padding: 0 2vw;
+    }
+
+    .highlight {
+        font-size: 16px;
+        background: linear-gradient(90deg, rgba(0,0,0,0.6743094649969363) 0%, rgba(13,12,12,0.4988972297903537) 100%), url('/imgs/covers/rio.jpg') ;
+        /* rgba, o a é de alpha 
+        https://cssgradient.io/*/
+        
+        background-size: cover;
+        background-position: top 15% right 50%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+        min-width: auto;
+        min-height: 50vh;
+        padding-bottom: 10vh;
+        margin-bottom: 1rem;
+    }
+
+    .text-wrapper {
+        width: 35%;
+        text-align: justify;
+        margin-bottom: 2.5rem;
+        min-width: 90vw;
+        text-shadow: 2px 2px black;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .title, .description {
+        color: white;
+    }
+
+    .button-wrapper {
+        display: flex;
+        justify-content: space-between;
+        min-width: 80vw;
+        margin-left: 8px;
+        margin-right: 5px;
+    }
+
+    .button-wrapper button:nth-child(1) {
+        margin-right: 7px;
+    }
+    /* carousel animantio */
+    .item {
+        transition: none;
+    }
+    
+    .owl-carousel .item:focus,
+    .owl-carousel .item:hover {
+      transform: none; 
+      cursor: pointer;
+    }
+}
