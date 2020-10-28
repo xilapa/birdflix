@@ -93,6 +93,7 @@ body {
 .highlight {
     font-size: 16px;
     background: linear-gradient(90deg, rgba(0,0,0,0.8743094649969363) 0%, rgba(0,0,0,0) 100%), url('/imgs/covers/rio.jpg') ;
+    background: url ('https://raw.githubusercontent.com/xilapa/birdflix/main/imgs/covers/rio.jpg');
     /* rgba, o a é de alpha 
     https://cssgradient.io/*/
     height: 500px;
