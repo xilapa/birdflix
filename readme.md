@@ -9,6 +9,9 @@ Neste projeto foram trabalhandos os conceitos de **flexbox**, **media queries** 
 - Fazer o carrousel de títulos apenas com CSS3;
 - Conectar a página a uma API e torna-la funcional.
 
+#### Veja agora
+
+[https://xilapa.github.io/birdflix/](https://xilapa.github.io/birdflix/ "https://xilapa.github.io/birdflix/")
 
 ##### Previews
 [![Desktop](https://raw.githubusercontent.com/xilapa/birdflix/main/preview/preview1.png "Desktop")](https://raw.githubusercontent.com/xilapa/birdflix/main/preview/preview1.png "Desktop")
