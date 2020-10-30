@@ -137,10 +137,13 @@
 
     .highlight {
         font-size: 16px;
-        background: linear-gradient(90deg, rgba(0,0,0,0.6743094649969363) 0%, rgba(13,12,12,0.4988972297903537) 100%), url('/imgs/covers/rio.jpg') ;
-        /* rgba, o a é de alpha 
-        https://cssgradient.io/*/
-        
+       
+        /* for local and server based */
+        background: linear-gradient(90deg, rgba(0,0,0,0.6743094649969363) 0%, rgba(13,12,12,0.4988972297903537) 100%), url('/imgs/covers/rio.jpg');
+    
+        /* for github pages */
+        background: linear-gradient(90deg, rgba(0,0,0,0.6743094649969363) 0%, rgba(13,12,12,0.4988972297903537) 100%), url('https://raw.githubusercontent.com/xilapa/birdflix/main/imgs/covers/rio.jpg');
+      
         background-size: cover;
         background-position: top 15% right 50%;
         background-repeat: no-repeat;
